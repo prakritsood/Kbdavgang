@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div id="page1" class="page">
+            <h1>Are You Ready for a Movie Night?</h1>
+            <p>We’re planning an awesome movie night and would love for you to join us!</p>
+            <button onclick="showPage(2)">Yes</button>
+            <button onclick="showPage(3)">No</button>
+        </div>
+
+        <div id="page2" class="page" style="display: none;">
+            <h1>Awesome! You're in!</h1>
+            <p>Please take a moment to vote in our WhatsApp group poll to finalize the details.</p>
+            <button onclick="showPage(1)">Return to Main Page</button>
+        </div>
+
+        <div id="page3" class="page" style="display: none;">
+            <h1>Hmm, not sure yet?</h1>
+            <p>Here’s why you shouldn’t miss out on this movie night...</p>
+            <ul>
+                <li>It's going to be a blast!</li>
+                <li>Great company and fun times.</li>
+                <li>Delicious snacks and drinks.</li>
+            </ul>
+            <button onclick="showPage(2)">Yes</button>
+            <button onclick="showPage(4)">No</button>
+        </div>
+
+        <div id="page4" class="page" style="display: none;">
+            <h1>Still on the fence?</h1>
+            <p>Think about all the fun we’ll have together. Let me share a few more reasons why this is going to be great...</p>
+            <ul>
+                <li>Special surprises throughout the night!</li>
+                <li>A chance to unwind and relax.</li>
+            </ul>
+            <button onclick="showPage(2)">Yes</button>
+            <button onclick="showPage(5)">No</button>
+        </div>
+
+        <div id="page5" class="page" style="display: none;">
+            <h1>Almost there!</h1>
+            <p>We really want you there! Here’s the final push...</p>
+            <ul>
+                <li>Everyone's looking forward to it!</li>
+                <li>It won’t be the same without you!</li>
+            </ul>
+            <button onclick="showPage(2)">Yes</button>
+            <button onclick="showPage(6)">No</button>
+        </div>
+
+        <div id="page6" class="page" style="display: none;">
+            <h1>You're Almost There!</h1>
+            <p>We’ve made it super easy for you to say 'Yes' now. Just click below to confirm!</p>
+            <button onclick="showPage(7)">Yes</button>
+            <button onclick="showPage(7)">Yes</button>
+        </div>
+
+        <div id="page7" class="page" style="display: none;">
+            <h1>Thanks for Joining Us!</h1>
+            <p>We’re excited to see you at the movie night! Stay tuned for more details.</p>
+        </div>
+    </div>
+</body>
+</html>
